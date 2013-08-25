@@ -20,5 +20,5 @@ require('./express-routes')(app);
 // Create servers and listen to configured port
 http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
-  console.log('This is yanexbo - yet another node/exporess boilerplate. My env is <%s>',env);
+  console.log('This is "yanexbo" - yet another node/express boilerplate. My env is <%s>',env);
 });
