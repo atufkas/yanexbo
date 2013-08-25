@@ -1,0 +1,32 @@
+doctype 5
+html
+  head
+    meta(charset='utf-8')
+    title #{title}
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='showtime: generate production ready layouts for web and print - within minutes!')
+    meta(name='author', content='Matthias Lienau')
+    link(href='./build/css/bootstrap-min.css', rel='stylesheet')
+    //- link(href='./build/css/bootstrap-responsive-min.css', rel='stylesheet')
+    link(href='./build/css/font-awesome.min.css', rel='stylesheet')
+    link(href='./build/css/jquery-ui.min.css', rel='stylesheet')
+    link(href='./stylesheets/showtime-bootstrap-overrides.css', rel='stylesheet')
+    link(href='./stylesheets/showtime-templates-wibu.css', rel='stylesheet')
+    link(href='./stylesheets/showtime-styles-wibu.css', rel='stylesheet')
+
+    // IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+  body
+    include _navbar-top
+    .container-fluid
+      .row
+        .span4(id='bar-left')
+          block bar-left
+        .span8(id='content-center')
+          block content-center
+
+    script(src='./build/js/jquery/jquery.min.js')
+    script(src='./build/js/jquery-ui/jquery-ui.min.js')
+    script(src='./build/js/bootstrap/bootstrap.min.js')
+    script(src='./javascripts/showtime-fun.js')
