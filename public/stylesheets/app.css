@@ -1,1 +1,8 @@
-/* Put your styles here if not generated and included elsewhere */
+/* Put your super individual styles here if not generated and included elsewhere */
+body {
+    margin: 80px;
+    padding: 20px;
+    border: 12px solid #ddd;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+}

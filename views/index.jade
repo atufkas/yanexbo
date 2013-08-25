@@ -1,11 +1,10 @@
 extends layout
 
-block content-center
-  .hero-unit
-    p Welcome to
-    h1 MAX showtime!
-    p Compose layouts for web and print. Within minutes.
-    p
-      a.btn.btn-success.btn-large(href='/app#organizer/createnew')  Mit einem neuen Folder starten!
-      | &nbsp;
-      a.btn.btn-primary.btn-large(href='/app#organizer')  Folder anzeigen...
+block content
+  p Welcome to
+  h1
+    | #{title}
+    | - Yet another node/express boilerplate
+  p
+    a(href='/hello/host') Example route
+
