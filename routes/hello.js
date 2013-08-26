@@ -1,3 +1,7 @@
-exports.dumpHostName = function(req, res) {
-  res.render('hello');
+exports.dumpRequest = function(req, res) {
+
+  res.render('dump', {
+    title: 'Dump of some request header values',
+    dumpValues: req.headers
+  });
 };

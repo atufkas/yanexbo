@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 #{appName}
+  h4 #{title}:
+  dl
+    each val,key in dumpValues
+      dt
+        strong= key
+      dd= val
+
+  p
+    a(href='/') Home

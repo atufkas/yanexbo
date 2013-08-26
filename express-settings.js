@@ -21,9 +21,9 @@ module.exports = function(app) {
     app.use(express.static(path.join(__dirname, 'public')));
     app.locals.pretty = true;
 
-    // Example function populating req object to res.locals object
+    // Example function populating app name to res.locals object
     app.all('*', function(req, res, next) {
-      res.locals.req = req;
+      res.locals.appName = 'yanexbo';
       next();
     });
   });

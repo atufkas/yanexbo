@@ -5,7 +5,7 @@ var express = require('express')
   , env = process.env.NODE_ENV || 'development'
   , config = require('./config')[ env ]
 
-// Connect to mongodb using config file db settings (uncomment to enable!)
+// Connect to mongodb using config file db settings
 mongoose.connect(config.db);
 
 // Create express application

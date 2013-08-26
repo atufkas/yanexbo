@@ -1,5 +1,3 @@
 exports.index = function(req, res) {
-  res.render('index', {
-    title: 'yanexbo'
-  });
+  res.render('index');
 };

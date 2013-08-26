@@ -7,5 +7,5 @@ module.exports = function (app) {
   app.get('/', indexRoutes.index);
 
   // "Hello" example route
-  app.get('/hello/host', helloRoutes.dumpHostName);
+  app.get('/hello/dump-request-headers', helloRoutes.dumpRequest);
 };
