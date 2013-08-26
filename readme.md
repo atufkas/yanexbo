@@ -46,6 +46,8 @@ $ npm install
 
 ### Setup database connection
 
+Database and other environment specific application configuration is meant to be stored in `./config.js`.
+
 ```
 ...
 development: {
@@ -54,8 +56,7 @@ development: {
 ...
 ```
 
-Database and other environment specific application configuration is meant to be stored in `./config.js`. Be sure to have
-your MongoDB up and running and define the connection string in config[env].db like shown above.
+Be sure to have your MongoDB up and running and define the connection string in [env].db like shown above.
 
 **Note**: yanexbo doesn't include a schema definition
 nor any other db access example at all (at least not yet) - it just illustrates how to setup the connection.
@@ -90,7 +91,7 @@ Open `http://localhost:3000` for sample page.
 /server.js                  Main file for bootstrapping and starting node http server
 ```
 
-Included are two example routes (`/` and `/hello/host`) rendering output using a simple HTML5 jade layout template.
+Included are two example routes (`/` and `/hello/dump-request-headers`) rendering output using a simple HTML5 jade layout template.
 
 ## Contribute
 
