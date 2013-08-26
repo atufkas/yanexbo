@@ -39,7 +39,7 @@ of you guys out there may find it useful.
 via git and npm:
 
 ```
-$ git clone http://github.com/atufkas/yanexbo.git [my-app-name]
+$ git clone git@github.com:atufkas/yanexbo.git [my-app-name]
 $ cd [my-app-name]
 $ npm install
 ```
