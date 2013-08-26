@@ -12,7 +12,7 @@ yanexbo includes:
 
 * [express](https://github.com/visionmedia/express) (incl. [Connect](https://github.com/senchalabs/connect)) - Web development framework
 * [mongoose](https://github.com/LearnBoost/mongoose) - Modelling framework for MongoDB
-* [jade](https://github.com/visionmedia/jade) - Tenplate engone
+* [jade](https://github.com/visionmedia/jade) - Template engine
 
 yanexbo provides:
 
