@@ -1,5 +1,5 @@
 var indexRoutes = require('./routes/index')
-  , helloRoutes = require('./routes/hello')
+  , helloRoutes = require('./routes/hello');
 
 module.exports = function (app) {
 
