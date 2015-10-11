@@ -65,7 +65,7 @@ If you don't want to use MongoDB at all right now, just remove or uncomment two 
 ### Run server
 
 ```
-node servers.js
+node server.js
 ```
 
 Open `http://localhost:3000` for sample page.
